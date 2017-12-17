@@ -9,6 +9,7 @@ smoke_material = '*'
 smoke_lines = 3
 space_between_ships = 30
 
+
 def center_spaceship(width, qty):
     delta = width - qty
     filler = ''
@@ -18,12 +19,13 @@ def center_spaceship(width, qty):
     line = '{}{}{} '.format(filler, spaceship, filler)
     return line
 
+
 while(1):
     right_shift = ' '
     for x in range(1,random.randint(1,100)):
         right_shift = right_shift + ' '
 
-    spaceship_width = random.randint(1,20) * 3
+    spaceship_width = random.randint(1,max_width) * 3
     for spaceshipline in range(1,(spaceship_width + 1), 2):
         print('{}{}'.format(right_shift, center_spaceship(spaceship_width, spaceshipline)))
         time.sleep(.1)
@@ -37,4 +39,4 @@ while(1):
 
     for roll in range(1,random.randint(1,space_between_ships)):
         print('')
-        time.sleep(.1)
+        time.sleep(.2)
