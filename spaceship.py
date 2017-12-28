@@ -44,7 +44,7 @@ def spaceship(max_width=30):
         time.sleep(.1)
 
 
-def spacing(space_between_ships = 30):
+def spacing(space_between_ships=30):
     for roll in range(1, random.randint(1, space_between_ships)):
         print('')
         time.sleep(.2)
