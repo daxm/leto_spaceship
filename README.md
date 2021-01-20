@@ -7,3 +7,7 @@ This program is a bit more fancy than the spaceships of my youth.  (We can now h
 the screen.)
 
 A fun silly program that prints "spaceships" to the console.
+
+---
+Screenshot:
+![screenshot](spaceship.png)
