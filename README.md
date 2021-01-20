@@ -9,5 +9,6 @@ the screen.)
 A fun silly program that prints "spaceships" to the console.
 
 ---
-Screenshot:
+Screenshot:  
+  
 ![screenshot](spaceship.png)
