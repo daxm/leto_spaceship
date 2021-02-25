@@ -59,7 +59,12 @@ while True:
     Note: If you go from a larger terminal window to a smaller one the current spaceship
     might word wrap in the new terminal size.
     """
-    rows, columns = subprocess.check_output(['stty', 'size']).decode().split()
+    try:
+        rows, columns = subprocess.check_output(['stty', 'size']).decode().split()
+    except subprocess.CalledProcessError:
+        rows = 50
+        columns = 100
+
     max_spaceship_width = int(int(columns) / 3)
 
     # Set the maximum width for this spaceship
